@@ -15,10 +15,9 @@ airflow webserver
 airflow scheduler
 
 # "use this command to find where airflow dags are saved" grep dags_folder ~/airflow/airflow.cfg 
-# My dags are saved in this folder dags_folder = /home/hans/airflow/dags
+My dags are saved in this folder dags_folder = /home/hans/airflow/dags
 
-# "run command" dbt debug
-# this will check whether dbt connection is working
+# "run command" dbt debug this will check whether dbt connection is working
 
 
 
