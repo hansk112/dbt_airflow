@@ -1,0 +1,22 @@
+# Python virtual environments
+airflow_dbt_env/
+venv/
+.env/
+
+# dbt artifacts
+dbt_modules/
+dbt_packages/
+logs/
+target/
+manifest.json
+run_results.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings (optional)
+.vscode/
