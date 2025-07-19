@@ -7,6 +7,7 @@ source airflow_dbt_env/bin/activate
 docker start b27134b53baf
 
 # start airflow webserver
+# access to http://localhost:8080/home
 
 airflow webserver
 
