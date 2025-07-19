@@ -1,0 +1,14 @@
+dbt_proj:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost     # Use container name
+      user: hans
+      password: 067581752       # Replace with actual password
+      port: 5432
+      dbname: first
+      schema: schem
+      threads: 1
+      keepalives_idle: 0
+      connect_timeout: 10

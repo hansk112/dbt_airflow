@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: contextlib-chdir
+Version: 1.0.2
+Summary: Backport of contextlib.chdir stdlib class added in Python3.11.
+License: BSD-3-License
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# contextlib-chdir
+
+Backport of [`contextlib.chdir`] stdlib class added in Python3.11.
+
+## Install
+
+```
+pip install contextlib-chdir
+```
+
+## Usage
+
+```python
+import os
+import tempfile
+from contextlib_chdir import chdir as chdir_ctx
+
+with chdir_ctx(tempfile.gettempdir()):
+    print(os.getcwd())  # /tmp
+```
+
+## Note
+
+You'll probably want to migrate to [`contextlib2`] when
+[this change is included](https://github.com/jazzband/contextlib2/issues/43).
+
+[`contextlib.chdir`]: https://docs.python.org/3.11/library/contextlib.html#contextlib.chdir
+[`contextlib2`]: https://github.com/jazzband/contextlib2
+
