@@ -5,7 +5,7 @@ from datetime import datetime
 with DAG('marketing_dbt_pipeline', start_date=datetime(2023, 1, 1),
          schedule_interval='@daily',
          catchup=False,
-        tags=['marketing', 'dbt','github']) as dag:
+        tags=['marketing', 'dbt','github','ten']) as dag:
 
     dbt_seed = BashOperator(
         task_id='dbt_seed',

@@ -7,7 +7,27 @@ This project demonstrates a simple data pipeline using **dbt** and **Apache Airf
 
 ## 🗂️ Project Structure
 
+<<<<<<< HEAD
 dbt-airflow-marketing-pipeline/ ├── dbt_proj/ # dbt models and seeds │ ├── models/ │ ├── seeds/ │ └── dbt_project.yml ├── dags/ # Airflow DAGs │ └── marketing_dbt_dag.py ├── profiles.yml # dbt profile with Postgres config ├── start_dbt_airflow.sh # Optional startup script ├── Dockerfile ├── docker-compose.yml └── README.md
+=======
+
+# access to http://localhost:8080/home
+
+# initialize airflow
+airflow db init
+
+# start airflow webserver
+airflow webserver
+
+# "open a new terminal" and start airflow scheduler
+
+airflow scheduler
+
+# "use this command to find where airflow dags are saved" grep dags_folder ~/airflow/airflow.cfg 
+My dags are saved in this folder dags_folder = /home/hans/airflow/dags
+
+# "run command" dbt debug this will check whether dbt connection is working
+>>>>>>> dada19a9fcba6ff659cada0c0681cf9d634fc70a
 
 
 ---
