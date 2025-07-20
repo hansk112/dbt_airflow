@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: campaign_metrics
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+          - unique
